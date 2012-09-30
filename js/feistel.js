@@ -1,0 +1,5 @@
+$('#encryptBtn').click(function()
+{
+	
+}
+);
