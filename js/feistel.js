@@ -36,6 +36,7 @@ $('#encryptBtn').click(function() {
 	//mensaje sin espacios
 	origin=normalize(origin);
 	origin = origin.replace(/ /g, '');
+	origin = origin.(\r\n|\n|\r)
 	origin = origin.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '');
 	console.log("origin es" + origin);
 	convertArray(origin);
