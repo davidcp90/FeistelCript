@@ -42,8 +42,6 @@ $('#encryptBtn').click(function() {
 });
 
 function convertArray(origin) {
-	longitud = origin.length;
-	numChunks = Math.round(longitud / 4);
 	temp = origin.match(/.{1,4}/g);
 	$('#chunkW').html(temp.join('\t'));
 	sustitution(temp);
